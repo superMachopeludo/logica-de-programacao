@@ -1,5 +1,5 @@
 <h4 align="center">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7OPeXeP6HzzjEdXz68w8z-eQprZMpIbzrvq8RpvsxbA&s" width="500>
+<img src="https://escolanetbrasilead.com.br/wp-content/uploads/2019/12/Logica-de-Programacao.jpg" width="500">
 </h4>
 
 
