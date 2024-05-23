@@ -6,5 +6,5 @@
 
 
 
-# Lógica de programação
+ # Lógica de programação
 essa pastinha é para guardar coisas aleatorias das aulas de logica de programação ...
