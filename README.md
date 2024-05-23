@@ -1,2 +1,2 @@
-#lógica de programação
+# Lógica de programação
 essa patinha é para guardar coisas aleatorias das aulas de logica de programação ...
