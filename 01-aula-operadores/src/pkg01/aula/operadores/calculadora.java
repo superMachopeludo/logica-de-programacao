@@ -42,6 +42,12 @@ public class calculadora extends javax.swing.JFrame {
             }
         });
 
+        PRIMEIRONUMERO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PRIMEIRONUMEROActionPerformed(evt);
+            }
+        });
+
         OPERACAO.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "+", "-", "*", "/" }));
 
         jLabel1.setText("RESULTADO:");
@@ -61,22 +67,23 @@ public class calculadora extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(18, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(PRIMEIRONUMERO, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3)
-                            .addComponent(OPERACAO, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(22, 22, 22)
-                        .addComponent(SEGUNDONUMERO, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(120, 120, 120)
+                        .addComponent(jLabel3))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(RESULTADO, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(31, 31, 31)
+                        .addComponent(RESULTADO, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(PRIMEIRONUMERO, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(OPERACAO, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(SEGUNDONUMERO, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -110,11 +117,33 @@ public class calculadora extends javax.swing.JFrame {
       double numeroDois = Double.parseDouble(this .SEGUNDONUMERO.getText());
       String op = this.OPERACAO.getSelectedItem().toString();
       
-      // lógica aqui
-     
-      this.RESULTADO.setText("chegou aqui");
+      double result = 0.0;
       
+      if("+".equals(op)){
+          double resultado = numeroUm + numeroDois;
+      }
+          
+      if (op =="+"){
+          result = numeroUm + numeroDois;
+      }
+      
+      else if(op == "-"){
+       result = numeroUm - numeroDois; 
+      }else if(op == "*"){
+          result = numeroUm * numeroDois;
+      }  else {    
+       result = numeroUm / numeroDois;
+          
+      
+      
+      }    
+        this.RESULTADO.setText(result + "");  
+          
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void PRIMEIRONUMEROActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PRIMEIRONUMEROActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PRIMEIRONUMEROActionPerformed
 
     /**
      * @param args the command line arguments
@@ -160,4 +189,10 @@ public class calculadora extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
+
+    private class resultado {
+
+        public resultado() {
+        }
+    }
 }
