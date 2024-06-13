@@ -9,4 +9,4 @@
   var total = (corrida1 + corrida2 + corrida3 + corrida4 + corrida5)
   var porcentagem= total - (total *0,25);
   
-  console.log("valor liquido": + valor liquido)
+  console.log("valor liquido: R$" + porcentagem)
