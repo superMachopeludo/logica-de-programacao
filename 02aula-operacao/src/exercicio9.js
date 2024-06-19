@@ -14,10 +14,10 @@ if(deps === 0){
 }else if(deps === 2){}
     var total = salario + (salario * 1.07){
     console.log(nome + "seu salario é : R$" + total.tofixed(2))
-}else if(deps === 3)
+}else if(deps === 3){
 var total = salario + (salario * 1.10)
     console.log(nome + "seu salario é : R$" + total.tofixed(2))
-}else if(deps === 4)
+}else if(deps === 4){
 var total = salario + (salario * 1.15)
 }
     console.log(nome + "seu salario é : R$" + total.tofixed(2))
