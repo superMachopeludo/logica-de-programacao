@@ -1,7 +1,6 @@
-var lista = ["wilian", "perin"]
+var lista = [];
 
-console.log(lista[1])
-
-
-
-
+for(var i = 0; i < 10; i++){
+    lista[i] = "will"
+}
+console.log(lista)
